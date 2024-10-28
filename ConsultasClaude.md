@@ -1,32 +1,3 @@
-# React + Vite
-
-## Instalación del Proyecto
-
-Para instalar y ejecutar el proyecto, sigue los siguientes pasos:
-
-1. Clona el repositorio:
-    ```bash
-    git clone https://github.com/tu-usuario/chalenge-rewards-eth.git
-    ```
-
-2. Navega al directorio del proyecto:
-    ```bash
-    cd chalenge-rewards-eth
-    ```
-
-3. Instala las dependencias:
-    ```bash
-    npm install
-    ```
-
-4. Inicia el servidor de desarrollo:
-    ```bash
-    npm run dev
-    ```
-
-Esto iniciará el servidor en modo de desarrollo y podrás acceder al proyecto en el puerto que tengas disponible.
-
-
 # Resumen de Consultas y Respuestas del Proyecto
 
 ## 1. Consulta sobre Error GraphQL
