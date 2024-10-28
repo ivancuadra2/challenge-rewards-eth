@@ -6,7 +6,7 @@ Para instalar y ejecutar el proyecto, sigue los siguientes pasos:
 
 1. Clona el repositorio:
     ```bash
-    git clone https://github.com/tu-usuario/chalenge-rewards-eth.git
+    git clone https://github.com/ivancuadra2/challenge-rewards-eth.git
     ```
 
 2. Navega al directorio del proyecto:
