@@ -7,19 +7,23 @@ const client = new ApolloClient({
       'X-API-KEY': 'BQY7FhzuJTR0jFiNW7CZmVEeDUZT8raU'
     }
   });
-  import { ApolloClient, InMemoryCache, gql } from '@apollo/client';
-
-export const GET_ETH_REWARDS = gql`
-  query GetEthRewards($since: String!, $till: String!) {
-    ethereum {
-      blocks {
-        date {
-          date
+  
+  
+  // Modifica la consulta para aceptar variables
+  const GET_ETH_REWARDS = gql`
+    query GetEthRewards($since: ISO8601DateTime!, $till: ISO8601DateTime!) {
+      ethereum {
+        blocks(
+          date: {since: $since, till: $till}
+          options: {limit: 30}
+        ) {
+          date {
+            date
+          }
+          reward
         }
-        reward
       }
     }
-  }
-`;
+  `;
 
   export {client, GET_ETH_REWARDS}
